@@ -59,9 +59,9 @@ const pregunta1 = {
 const pregunta2 = {
 	pregunta: "¿Cuál de estos ríos es el más extenso?",
 	opciones: {
-      correcta: "salado del norte",
-			incorrecta1: "bermejo",
-			incorrecta2: "parana"
+      correcta: "Salado del Norte",
+			incorrecta1: "Bermejo",
+			incorrecta2: "Parana"
 	},
   datoAdicional:{
     informacion:"El río Salado, río Salado del Norte, río Juramento o Pasaje es un importante curso fluvial del centro norte de Argentina, perteneciente al complejo hídrico de la Cuenca del Plata. Tiene una longitud de 2210 km, y drena una amplia cuenca de 124 199 km²."
@@ -71,9 +71,9 @@ const pregunta2 = {
 const pregunta3 = {
 	pregunta: "¿En qué provincia se encuentra el Lago Traful?",
 	opciones: {
-			incorrecta1: "rio negro",
-			correcta: "neuquen",
-			incorrecta2: "santa cruz"
+			incorrecta1: "Río negro",
+			correcta: "Neuquén",
+			incorrecta2: "Santa Cruz"
 	},
   datoAdicional:{
     informacion:"El lago Traful es un lago de Argentina localizado en el departamento Los Lagos de la provincia del Neuquén. Se encuentra dentro del parque nacional Nahuel Huapi. Tiene una superficie de 76 km² y es el punto de inicio del río Traful, un afluente del río Limay."
