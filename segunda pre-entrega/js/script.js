@@ -14,6 +14,7 @@ const input = document.getElementById("textInput");
 const correcta1 = document.getElementById("correcta");
 const correcta2=document.getElementById("correctaFinal");
 let recordar= document.getElementById("rememberMe");
+const btnSwal = document.getElementById('botonSwal');
 
 function incorrecta(respuesta) {
   correcta1.textContent =
@@ -85,12 +86,8 @@ const preguntasArray=[pregunta1,pregunta2,pregunta3,]
 txt.textContent =
   "Bienvenido a un juego de preguntas, si desea jugar escriba 'quiero', sino lo desea escriba 'no quiero'";
   boton.addEventListener('click', () => {
-    if (recordar.checked) {
-        guardarDatos(localStorage);
-    } else {
-        guardarDatos(sessionStorage);
-    }
-})
+    recordar.checked ? guardarDatos(localStorage):guardarDatos(sessionStorage);
+  })
 boton.onclick = () => {
   const checkbox=document.getElementById("divRecordar")
   checkbox.classList.replace("checkbox","d-none")
@@ -151,17 +148,41 @@ boton.onclick = () => {
               const botonInfo=document.getElementById("botonInfo");
               botonInfo.classList.replace("d-none","d-block")
               botonInfo.onclick=()=>{
-                console.log(txtInputInfo.value)
-                if(txtInputInfo.value==1||txtInputInfo.toLowerCase.value=="glaciar perito moreno"){
-                  txtInfo.textContent=pregunta1.datoAdicional.informacion;
+                if(txtInputInfo.value==1||txtInputInfo.value.toLowerCase()=="glaciar perito moreno"){
+                  Swal.fire(
+                    {
+                title:'Información adicional',
+                text:pregunta1.datoAdicional.informacion,
+                icon:'info',
+                iconColor:'#81f40e',
+                confirmButtonText:'Fui informado',
+                position:'top-center'
+                    }
+                )
                 }
-                console.log(txtInputInfo.value)
-                if(txtInputInfo.value==2||txtInputInfo.toLowerCase.value=="salado del norte"){
-                  txtInfo.textContent=pregunta2.datoAdicional.informacion;
+                if(txtInputInfo.value==2||txtInputInfo.value.toLowerCase()=="salado del norte"){
+                  Swal.fire(
+                    {
+                title:'Información adicional',
+                text:pregunta2.datoAdicional.informacion,
+                icon:'info',
+                iconColor:'#81f40e',
+                confirmButtonText:'Fui informado',
+                position:'top-center'
+                    }
+                )
                 }
-                console.log(txtInputInfo.value)
-                if(txtInputInfo.value==3||txtInputInfo.toLowerCase.value=="lago traful"){
-                  txtInfo.textContent=pregunta2.datoAdicional.informacion;
+                if(txtInputInfo.value==3||txtInputInfo.value.toLowerCase()=="lago traful"){
+                  Swal.fire(
+                    {
+                title:'Información adicional',
+                text:pregunta3.datoAdicional.informacion,
+                icon:'info',
+                iconColor:'#81f40e',
+                confirmButtonText:'Fui informado',
+                position:'top-center'
+                    }
+                )
                 }
               }
             }
