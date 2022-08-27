@@ -18,6 +18,8 @@ const correcta1 = document.getElementById("correcta");
 const correcta2 = document.getElementById("correctaFinal");
 const btnSwal = document.getElementById("botonSwal");
 
+
+//Función para cuando se equivoca en la respuesta
 function incorrecta(respuesta) {
   Toastify({
     text: "¡Respondiste mal! Pero no te rindas la próxima pregunta seguro la respondes bien.",
@@ -35,6 +37,7 @@ function incorrecta(respuesta) {
   }).showToast();
 }
 
+//Función para cuando no se equivoca en la respuesta
 function correcta() {
   contador2++;
   Toastify({
@@ -53,6 +56,7 @@ function correcta() {
   }).showToast();
 }
 
+//Función para la última pregunta, su objetivo es guardar y luego sacar del SessionStorage la puntuación.
 function correctaFinal() {
   contador2++;
   const arrayCorrectas = [contador2];
@@ -69,6 +73,7 @@ function correctaFinal() {
   });
 }
 
+//Función para poder agarrar el array de objetos de preguntas que están en preguntas.json
 function getPreguntas() {
   fetch("../js/preguntas.json")
     .then((response) => response.json())
@@ -77,6 +82,7 @@ function getPreguntas() {
     });
 }
 
+//Función para cuando supere las preguntas, si llega al caso de querer saber más acerca de ellas.
 function mostrarInfoAdicional(pregunta) {
   Swal.fire({
     title: "Información adicional",
@@ -87,6 +93,7 @@ function mostrarInfoAdicional(pregunta) {
   });
 }
 
+//Función para mostrar las preguntas sin tener que repetir tanto código.
 function mostrarPregunta(pregunta, index) {
   boton.classList.replace("d-none", "d-block");
   txt.textContent =
