@@ -1,0 +1,35 @@
+[
+    {
+        "pregunta": "¿Cuánto mide de alto el Glaciar Perito Moreno?",
+        "opciones": {
+            "incorrecta1": "70 metros",
+            "correcta": "60 metros",
+            "incorrecta2": "80 metros"
+        },
+        "datoAdicional": {
+            "informacion": "El glaciar Perito Moreno es una gruesa masa de hielo ubicada en el departamento Lago Argentino de la provincia de Santa Cruz, en el sudoeste de la Argentina, en la región de la Patagonia. Se integra dentro del parque nacional Los Glaciares. Este glaciar se origina en el campo de hielo Patagónico Sur."
+        }
+    },
+    {
+        "pregunta": "¿Cuál de estos ríos es el más extenso?",
+        "opciones": {
+            "correcta": "Salado del Norte",
+            "incorrecta1": "Bermejo",
+            "incorrecta2": "Parana"
+        },
+        "datoAdicional": {
+            "informacion": "El río Salado, río Salado del Norte, río Juramento o Pasaje es un importante curso fluvial del centro norte de Argentina, perteneciente al complejo hídrico de la Cuenca del Plata. Tiene una longitud de 2210 km, y drena una amplia cuenca de 124 199 km²."
+        }
+    },
+    {
+        "pregunta": "¿En qué provincia se encuentra el Lago Traful?",
+        "opciones": {
+            "incorrecta1": "Río Negro",
+            "correcta": "Neuquén",
+            "incorrecta2": "Santa Cruz"
+        },
+        "datoAdicional": {
+            "informacion": "El lago Traful es un lago de Argentina localizado en el departamento Los Lagos de la provincia del Neuquén. Se encuentra dentro del parque nacional Nahuel Huapi. Tiene una superficie de 76 km² y es el punto de inicio del río Traful, un afluente del río Limay."
+        }
+    }
+]

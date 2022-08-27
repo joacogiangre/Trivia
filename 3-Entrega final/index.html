@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ArgenTrivia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <body class="burly">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="img/argentrivia.png" alt="" width="150" height="100" class="d-inline-block align-text-top">
+              </a>
+            </div>
+          </nav>
+        <header class="burly">
+            <h1 class="text-md-center my-3">¡Bienvenido a ArgenTrivia!</h1>
+        </header>
+        <main class="burly">
+            <form class="mx-4 d-flex justify-content-center mt-4">
+                <fieldset class="burly">
+                  <legend>Trivia</legend>
+                  <div class="mb-3">
+                    <label for="TextInput" id="txt" class="form-label d-block">Ingrese su respuesta</label>
+                    <button type="button" id="btnQuiero"class="btn btn-primary mb-2 d-block">Quiero</button>
+                    <button type="button" id="btnNoQuiero"class="btn btn-primary mb-2 d-block">No quiero</button>
+                    <input type="text" id="textInput" class="form-control d-none" placeholder="Ingrese su respuesta">
+                  </div>
+                  <button type="button" id="boton"class="btn btn-primary d-none">Enviar</button>
+                  <br>
+                  <br>
+                  <button type="button" id="siguiente"class="btn btn-primary d-none">Siguiente</button>
+                  <p id="correcta"></p>
+                  <p id="correctaFinal"></p>
+                  <label for="TextInput" id="txtInfo" class="form-label"></label>
+                  <button type="button" id="info"class="btn btn-primary d-none">Información</button>
+                  <br>
+                  <label for="TextInput" id="txtEleccion" class="form-label"></label>
+                  <input type="text" id="txtInputInfo" class="form-control d-none" placeholder="Ingrese sobre lo que quiere informarse">
+                  <br>
+                  <button type="button" id="botonInfo"class="btn btn-primary d-none">Enviar</button>
+                  <br>
+                  <br>
+                </fieldset>
+              </form>
+        </main>
+        <script src="http://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
