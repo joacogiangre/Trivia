@@ -17,11 +17,6 @@ const input = document.getElementById("textInput");
 const correcta1 = document.getElementById("correcta");
 const correcta2 = document.getElementById("correctaFinal");
 const btnSwal = document.getElementById("botonSwal");
-let emojis = [
-  0x1f600, 0x1f604, 0x1f34a, 0x1f344, 0x1f37f, 0x1f363, 0x1f370, 0x1f355,
-  0x1f354, 0x1f35f, 0x1f6c0, 0x1f48e, 0x1f5fa, 0x23f0, 0x1f579, 0x1f4da,
-  0x1f431, 0x1f42a, 0x1f439, 0x1f424,
-];
 
 function incorrecta(respuesta) {
   Toastify({
@@ -36,23 +31,6 @@ function incorrecta(respuesta) {
     offset: {
       x: 20,
       y: 20,
-    },
-    onClick: () => {
-      Toastify({
-        text: "Hay dos formas de escribir programas sin errores; sólo la tercera funciona",
-        duration: 1500,
-        position: "left",
-        style: {
-          background: "linear-gradient(to right, #92fe9d 0%, #00c9ff 100%)",
-          color: "black",
-          width: "20vw",
-          height: 80,
-        },
-        offset: {
-          x: 10,
-          y: 125,
-        },
-      }).showToast();
     },
   }).showToast();
 }
@@ -71,23 +49,6 @@ function correcta() {
     offset: {
       x: 20,
       y: 20,
-    },
-    onClick: () => {
-      Toastify({
-        text: "Es genial trabajar con ordenadores. No discuten, lo recuerdan todo y no se beben tu cerveza",
-        duration: 1500,
-        position: "left",
-        style: {
-          background: "linear-gradient(to right, #92fe9d 0%, #00c9ff 100%)",
-          color: "black",
-          width: "20vw",
-          height: 80,
-        },
-        offset: {
-          x: 10,
-          y: 125,
-        },
-      }).showToast();
     },
   }).showToast();
 }
